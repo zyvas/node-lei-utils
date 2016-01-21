@@ -141,7 +141,7 @@ exports.randomString = function (size, chars) {
 exports.randomNumber = function (size) {
   size = size || 6;
   var code_string = '0123456789';
-  var max_num = code_string.length + 1;
+  var max_num = code_string.length;
   var new_pass = '';
   while (size > 0) {
     new_pass += code_string.charAt(Math.floor(Math.random() * max_num));
